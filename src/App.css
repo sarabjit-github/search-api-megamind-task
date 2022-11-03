@@ -85,8 +85,26 @@ main {
 }
 .apiContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   place-content: center;
   gap: 2rem;
   margin-bottom: 2rem;
+}
+
+@media (max-width:1040px) {
+  .App{
+    padding: 0 1rem;
+  }
+  .cr{
+      padding-left: 240px;
+  }
+  .apiContainer{
+    gap: 1rem;
+  }
+}
+@media (max-width:768px) {
+  .cr{
+      padding-left: 0px;
+      margin-top: 2.25rem;
+  }
 }
