@@ -65,6 +65,7 @@ header {
 }
 .logo {
   margin-bottom: 1rem;
+  display: inline-block;
 }
 .logo h1 {
   color: var(--secondary-color);
@@ -78,16 +79,14 @@ main {
   gap: 1rem;
   position: relative;
 }
-.searchPage{
+.cr{
   padding-left: 300px;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .apiContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   place-content: center;
   gap: 2rem;
-  padding-left: 300px;
-  margin-top: 1rem;
   margin-bottom: 2rem;
 }

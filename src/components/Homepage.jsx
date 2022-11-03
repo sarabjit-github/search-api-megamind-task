@@ -28,7 +28,7 @@ export const Homepage = ({ isLoading, apiData, selectedCategories }) => {
   }, [apiData, selectedCategories]);
 
   return (
-    <div className="apiContainer">
+    <div className="apiContainer cr">
       {isLoading ? (
         <Loader />
       ) : selectedCategories.length === 0 ? (

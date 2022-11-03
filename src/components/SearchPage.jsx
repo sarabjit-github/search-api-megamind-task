@@ -43,7 +43,7 @@ export const SearchPage = ({ apiData, isLoading, selectedCategories }) => {
 
   return (
     <>
-      <div className="searchPage">
+      <div className="cr">
         <h2 style={{ marginBottom: "2rem" }}>You search for `{searchValue}`</h2>
         <div className="apiContainer">
           {!isLoading ? (

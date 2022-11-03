@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { Search } from "./components/Search";
-import { ApiCard } from "./components/ApiCard";
 import "./App.css";
 import utilStyles from "./styles/utils.module.css";
 import { SearchPage } from "./components/SearchPage";
@@ -12,8 +11,7 @@ function App() {
   const [apiData, setApiData] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [selectedCategories, setSelectedCategories] = useState([]);
-  
-  
+
   useEffect(() => {
     let url = "https://api.publicapis.org/entries";
     const fetchData = async () => {
@@ -43,11 +41,23 @@ function App() {
         <Routes>
           <Route
             path="/"
-            element={<Homepage apiData={apiData} isLoading={isLoading} selectedCategories={selectedCategories} />}
+            element={
+              <Homepage
+                apiData={apiData}
+                isLoading={isLoading}
+                selectedCategories={selectedCategories}
+              />
+            }
           />
           <Route
             path="/search/:searchValue"
-            element={<SearchPage apiData={apiData} isLoading={isLoading} selectedCategories={selectedCategories} />}
+            element={
+              <SearchPage
+                apiData={apiData}
+                isLoading={isLoading}
+                selectedCategories={selectedCategories}
+              />
+            }
           />
         </Routes>
       </main>
