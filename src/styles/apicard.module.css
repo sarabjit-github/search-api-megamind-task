@@ -1,0 +1,37 @@
+.apiCard{
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+    color: var(--secondary-color);
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.15);
+    border-radius: 18px;
+    transition: 150ms;
+    background: rgba(0, 0, 0, 0.01);
+}
+.apiCard:hover{
+    color: var(--primary-color);
+    background: rgba(58, 74, 218, 0.05);
+    border-color: rgba(58, 74, 218, 0.15);
+}
+.apiCard div:nth-child(1) p{
+    /* font-weight: 500; */
+    font-size: 1.125rem;
+    opacity: 0.85;
+    margin-top: .5rem;
+}
+.apiCard div:nth-child(2){
+    /* margin-top: 2rem; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.apiCard div p{
+    font-weight: 500;
+}
+.apiCard div p span{
+    color: limegreen;
+}

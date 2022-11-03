@@ -1,0 +1,40 @@
+.searchWrapper{
+    position: relative;
+    max-width: 800px;
+    height: fit-content;
+    margin: 0 auto;
+}
+.searchWrapper input{
+    width: 100%;
+    border: 2px solid;
+    border-radius: 40px;
+    border-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 1.5rem;
+    padding-left: 3.45rem;
+    outline: none;
+    transition: 150ms;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+.searchWrapper input:focus{
+    color: var(--primary-color);
+    border-color: rgba(58, 74, 218, 0.75);
+}
+.searchWrapper input::placeholder{
+    color: rgba(0, 0, 0, 0.7);
+}
+.searchIcon{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    padding:1rem;
+    padding-right: 0;
+}
+.svgIcon{
+    fill: rgba(0, 0, 0, 0.7);
+    width: 35px;
+    height: auto;
+}
+.searchWrapper input:focus .svgIcon{
+    fill: var(--primary-color);
+}
